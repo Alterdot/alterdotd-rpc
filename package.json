@@ -1,7 +1,7 @@
 {
-  "name": "@dashevo/dashd-rpc",
-  "description": "Dash Client Library to connect to Dash Core (dashd) via RPC",
-  "version": "2.3.1",
+  "name": "@Alterdot/alterdotd-rpc",
+  "description": "Alterdot Client Library to connect to Alterdot (alterdotd) via RPC",
+  "version": "1.0.0",
   "author": {
     "name": "Stephen Pair",
     "email": "stephen@bitpay.com"
@@ -29,12 +29,12 @@
     }
   ],
   "keywords": [
-    "dash",
+    "alterdot",
     "rpc"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/dashd-rpc"
+    "url": "https://github.com/Alterdot/alterdotd-rpc"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -56,7 +56,7 @@
     "sinon": "^9.2.2"
   },
   "bugs": {
-    "url": "https://github.com/dashevo/dashd-rpc/issues"
+    "url": "https://github.com/Alterdot/alterdotd-rpc/issues"
   },
-  "homepage": "https://github.com/dashevo/dashd-rpc"
+  "homepage": "https://github.com/Alterdot/alterdotd-rpc"
 }

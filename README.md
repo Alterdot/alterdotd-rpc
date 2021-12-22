@@ -1,16 +1,16 @@
-# dashd-rpc
+# alterdotd-rpc
 
-[![Build Status](https://github.com/dashevo/dashd-rpc/actions/workflows/test.yml/badge.svg)](https://github.com/dashevo/dashd-rpc/actions/workflows/test.yml)
-[![NPM Package](https://img.shields.io/npm/v/@dashevo/dashd-rpc.svg)](https://www.npmjs.org/package/@dashevo/dashd-rpc)
+[![Build Status](https://github.com/Alterdot/alterdotd-rpc/actions/workflows/test.yml/badge.svg)](https://github.com/Alterdot/alterdotd-rpc/actions/workflows/test.yml)
+[![NPM Package](https://img.shields.io/npm/v/@Alterdot/alterdotd-rpc.svg)](https://www.npmjs.org/package/@Alterdot/alterdotd-rpc)
 
-Dash Client Library to connect to Dash Core (dashd) via RPC
+Alterdot Client Library to connect to Alterdot (alterdotd) via RPC
 
 ## Install
 
-dashd-rpc runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+alterdotd-rpc runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install @dashevo/dashd-rpc
+npm install @Alterdot/alterdotd-rpc
 ```
 
 ## Usage
@@ -27,8 +27,8 @@ Config parameters :
 
 Promise vs callback based
 
-  - `require('@dashevo/dashd-rpc/promise')` to have promises returned
-  - `require('@dashevo/dashd-rpc')` to have callback functions returned
+  - `require('@Alterdot/alterdotd-rpc/promise')` to have promises returned
+  - `require('@Alterdot/alterdotd-rpc')` to have callback functions returned
 	
 ### Examples
 
@@ -37,17 +37,17 @@ Config:
 ```javascript
 var config = {
     protocol: 'http',
-    user: 'dash',
+    user: 'alterdot',
     pass: 'local321',
     host: '127.0.0.1',
-    port: 19998
+    port: 31050
 };
 ```
 
 Promise based:
 
 ```javascript
-var RpcClient = require('@dashevo/dashd-rpc/promise');
+var RpcClient = require('@Alterdot/alterdotd-rpc/promise');
 var rpc = new RpcClient(config);
 
 rpc.getRawMemPool()
@@ -68,8 +68,8 @@ Callback based (legacy):
 
 ```javascript
 var run = function() {
-  var bitcore = require('@dashevo/dashcore-lib');
-  var RpcClient = require('@dashevo/dashd-rpc');
+  var bitcore = require('alterdot-lib');
+  var RpcClient = require('@Alterdot/alterdotd-rpc');
   var rpc = new RpcClient(config);
 
   var txids = [];
@@ -115,13 +115,13 @@ var run = function() {
 You can dynamically access to the help of each method by doing
 
 ```
-const RpcClient = require('@dashevo/dashd-rpc');
+const RpcClient = require('@Alterdot/alterdotd-rpc');
 var client = new RPCclient({
     protocol:'http',
-    user: 'dash',
+    user: 'alterdot',
     pass: 'local321', 
     host: '127.0.0.1', 
-    port: 19998
+    port: 31050
 });
 
 var cb = function (err, data) {
@@ -137,7 +137,7 @@ client.help('getinfo',cb);
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/dash-std-template/issues/new) or submit PRs.
+Feel free to dive in! Open an issue or submit PRs.
 
 ## License
 
