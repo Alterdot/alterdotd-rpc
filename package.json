@@ -1,12 +1,12 @@
 {
-  "name": "@Alterdot/alterdotd-rpc",
+  "name": "alterdotd-rpc",
   "description": "Alterdot Client Library to connect to Alterdot (alterdotd) via RPC",
-  "version": "1.0.0",
-  "author": {
-    "name": "Stephen Pair",
-    "email": "stephen@bitpay.com"
-  },
+  "version": "1.0.1",
   "contributors": [
+    {
+      "name": "Stephen Pair",
+      "email": "stephen@bitpay.com"
+    },
     {
       "name": "Jeff Garzik",
       "email": "jgarzik@bitpay.com"
@@ -29,6 +29,7 @@
     }
   ],
   "keywords": [
+    "adot",
     "alterdot",
     "rpc"
   ],
